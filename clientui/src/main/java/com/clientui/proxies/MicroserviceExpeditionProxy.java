@@ -17,7 +17,7 @@ public interface MicroserviceExpeditionProxy {
     public void addExpedition(@RequestBody ExpeditionBean expedition);
 
     @GetMapping(value = "/microservice-expedition/Expedition/{id}")
-    public ExpeditionBean getExpeditionById(@PathVariable int id);
+    public ExpeditionBean getExpeditionById(@PathVariable("id") int id);
 
     @PutMapping(value = "/microservice-expedition/Expedition")
     public void updateExpedition(@RequestBody ExpeditionBean expedition);

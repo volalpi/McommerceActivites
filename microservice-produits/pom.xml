@@ -64,6 +64,7 @@
 			<artifactId>spring-cloud-starter-sleuth</artifactId>
 		</dependency>
 
+		<!-- Pour mieux deboguer les requetes en cas de plusieurs microservices, spring-sleuth donne un identifiant unique pour chaque requête -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-sleuth-zipkin</artifactId>
